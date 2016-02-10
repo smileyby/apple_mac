@@ -1175,7 +1175,8 @@ li {
                 width: 674px;
                 background-image: url("../image/macbooks_large.jpg");
                 position: absolute;
-                left: -640px;
+                z-index:-1;
+                left: -140px;
                 top: -315px;}  
 .fp-product.fp-product-macbook-pro{position: relative;
                                    z-index: 100;
