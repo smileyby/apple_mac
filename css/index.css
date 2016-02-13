@@ -1084,36 +1084,100 @@ li {
         padding-top: 550px;
         padding-bottom: 502px;}
 .row{margin:0;}
+.container{padding:0;}
 .fp-product{padding-bottom: 140px;}
 .fp-product-imac{position: relative;
                 z-index: 1;
                 padding-top: 550px;
                 padding-bottom: 502px;}
+@media (max-width: 1068px){
+  .fp-product-imac {
+      padding-top: 415px;
+      padding-bottom: 325px;
+  }
+}
+@media (max-width: 735px){
+  .fp-product-imac {
+      margin-top: 90px;
+      padding-top: 0;
+      padding-bottom: 70px;
+  }
+}
 .fp-section-content{width: 980px;
                     margin-left: auto;
                     margin-right: auto;
                     position: relative;
                     z-index: 1;
                     height: 100%;}
+@media(max-width: 1068px){
+  .fp-section-content {width: 692px;}
+}
+@media(max-width: 735px){
+  .fp-section-content {width: 90%;}
+}
 .fp-product-content{position: relative;
                     z-index: 10;
-                    top: -300px;
-                    left: 30px;
+                    top: -310px;
+                    left: 10px;
                     text-align: center;}
+@media(max-width:1068px){
+  .fp-product-content{left:25px;
+                      top:-180px;
+                      padding:0px;}
+}
+@media(max-width:735px){
+  .fp-product-content{left:0px;
+                      top:130px;
+                      margin-bottom:80px;
+                      padding:0px;
+                      text-align:center;}
+}
 .fp-product-headline {font-size: 72px;
                       line-height: 1.0556;
                       font-weight: 200;
                       letter-spacing: -0.024em;
-                      margin-bottom: 0;} 
+                      margin-bottom: 0;
+                      font-family:"My thin";} 
+@media(max-width:1068px){
+  .fp-product-headline{font-size: 64px;
+                       line-height: 1.0625;
+                       font-weight: 200;
+                       letter-spacing: -0.02em;}
+}
+@media(max-width:735px){
+  .fp-product-headline{font-size: 42px;
+                       line-height: 1.1429;
+                       font-weight: 200;
+                       letter-spacing: -0.01em}
+}
 .fp-product-subheadline{font-size: 42px;
                         line-height: 1.1429;
                         font-weight: 200;
-                        letter-spacing: -0.01em;} 
+                        letter-spacing: -0.01em;
+                        font-family:"My thin";} 
+@media(max-width:1068px){
+  .fp-product-subheadline{font-size: 32px;
+                          line-height: 1.125;
+                          font-weight: 200;
+                          letter-spacing: 0em;}
+}
+@media(max-width:735px){
+  .fp-product-subheadline{font-size: 28px;
+                          line-height: 1.1429;
+                          font-weight: 200;
+                          letter-spacing: 0em;}
+}
 .fp-more{font-size: 24px;
          font-weight: 200;
          letter-spacing: normal;
          line-height: 2.5em;
          margin-top: 0.625em;} 
+@media(max-width:1068px) and (max-width:735px){
+  .fp-more{font-size: 18px;
+           line-height: 1.45;
+           font-weight: 400;
+           letter-spacing: normal;}
+}
 .fp-more .more{margin-left: 10px;
                margin-right: 10px;} 
 .more:hover{text-decoration:underline;
@@ -1132,6 +1196,7 @@ li {
             top: 0;
             padding-left: 0.3em;} 
 .large-image{margin:0 auto;
+             padding:0px;
              float: none;} 
 .large-image .image-imac {background-repeat: no-repeat;
                           background-size: 987px 799px;
@@ -1140,7 +1205,31 @@ li {
                           background-image: url("../image/hero_large.jpg");
                           z-index: -1;
                           position: absolute;
-                          top: -266px;}
+                          top: -240px;
+                          left:-20px;}
+@media(max-width:1068px){
+  .large-image .image-imac {background-repeat: no-repeat;
+                            background-size: 723px 585px;
+                            height: 585px;
+                            width: 723px;
+                            background-image: url("../image/hero_medium.jpg");
+                            z-index: -1;
+                            position: absolute;
+                            top: -142px;
+                            left: 0;}
+}
+@media(max-width:735px){
+  .large-image .image-imac {background-repeat: no-repeat;
+                            background-size: 439px 355px;
+                            height: 355px;
+                            width: 439px;
+                            background-image: url("../image/hero_small.jpg");
+                            z-index: -1; 
+                            position: static;
+                            margin-left: auto;
+                            margin-right: auto;}
+  .large-image{padding-top:50px;}
+}
 .fp-product-accessories{margin-bottom: 0;} 
 .fp-product-con{position: relative;
                 text-align: center;
@@ -1149,6 +1238,10 @@ li {
                 float: none;
                 z-index: 1;
                 min-height: 2px;} 
+@media(max-width: 735px){
+  .fp-product-con{width:100%;
+                  padding:0px;}
+}
 .image-magic-accessories{background-repeat: no-repeat;
                          background-size: 1661px 314px;
                          height: 314px;
@@ -1176,7 +1269,7 @@ li {
                 background-image: url("../image/macbooks_large.jpg");
                 position: absolute;
                 z-index:-1;
-                left: -140px;
+                left: -640px;
                 top: -315px;}  
 .fp-product.fp-product-macbook-pro{position: relative;
                                    z-index: 100;
