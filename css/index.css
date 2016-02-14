@@ -960,6 +960,10 @@ li {
 .macbookpro-position{position:relative;
                      top:265px;
                      z-index:5;}
+@media(max-width:1068px){
+  .macbookpro-position{top:0px;
+                       left:0px;}
+}
 .product_label{font-size: 12px;
               line-height: 1;
               font-weight: bold;
@@ -1066,7 +1070,7 @@ li {
 /* mac end */
 /* main begin */
 .main{overflow:hidden;
-      font-family:"My text";}
+      font-family:"My thin";}
 .pagetitle {position: absolute;
             top: 0;
             left: 0;
@@ -1172,7 +1176,13 @@ li {
          letter-spacing: normal;
          line-height: 2.5em;
          margin-top: 0.625em;} 
-@media(max-width:1068px) and (max-width:735px){
+@media(max-width:1068px){
+  .fp-more{font-size: 18px;
+           line-height: 1.45;
+           font-weight: 400;
+           letter-spacing: normal;}
+}
+@media(max-width:735px){
   .fp-more{font-size: 18px;
            line-height: 1.45;
            font-weight: 400;
@@ -1231,6 +1241,9 @@ li {
   .large-image{padding-top:50px;}
 }
 .fp-product-accessories{margin-bottom: 0;} 
+@media(max-width:1068px){
+  .fp-product-accessories{padding-bottom: 90px;} 
+}
 .fp-product-con{position: relative;
                 text-align: center;
                 margin-left: auto;
@@ -1238,6 +1251,9 @@ li {
                 float: none;
                 z-index: 1;
                 min-height: 2px;} 
+@media(max-width:1068px){
+  .medium-8{width: 66.6667%;}
+}
 @media(max-width: 735px){
   .fp-product-con{width:100%;
                   padding:0px;}
@@ -1251,17 +1267,49 @@ li {
                          position: absolute;
                          left: -527px;
                          top: 15px;} 
+@media(max-width:1068px){
+  .image-magic-accessories{background-size: 979px 222px;
+                           height: 222px;
+                           width: 979px;
+                           background-image: url("../image/apple_accessories_medium.jpg");
+                           left: -175px;}
+}
+@media(max-width:765px){
+  .image-magic-accessories{position: absolute;
+                           left: -46px;
+                           top: 26px;
+                           background-size: 580px 110px;
+                           height: 110px;
+                           width: 580px;
+                           background-image: url("../image/apple_accessories_small.jpg");}
+}
+.fp-product-column{text-align:center;
+                   padding:0;}
 .fp-product.fp-product-macbook{padding-top: 515px;
                                padding-bottom: 375px;
                                position: relative;
                                z-index: 2;} 
+@media(max-width:1068px){
+  .fp-product.fp-product-macbook{padding-top: 460px;
+                                 padding-bottom: 300px;}
+}
+@media(max-width:735px){
+  .fp-product.fp-product-macbook{padding-top: 120px;
+                                 padding-bottom: 0;}
+}
 .macbook-content{position: relative;
                  text-align: center;
                  width: 980px;
                  margin-left: auto;
                  margin-right: auto;
                  z-index: 1;
-                 height: 100%;} 
+                 height: 100%;}
+@media(max-width:1068px){
+  .macbook-content{width: 692px;}
+} 
+@media(max-width:735px){
+  .macbook-content{width:90%;}
+}
 .image-macbook {background-repeat: no-repeat;
                 background-size: 674px 844px;
                 height: 844px;
@@ -1269,11 +1317,41 @@ li {
                 background-image: url("../image/macbooks_large.jpg");
                 position: absolute;
                 z-index:-1;
-                left: -640px;
+                left: -62px;
                 top: -315px;}  
+@media(max-width:1068px){
+  .image-macbook {background-repeat: no-repeat;
+                  background-size: 524px 655px;
+                  height: 655px;
+                  width: 524px;
+                  background-image: url("../image/macbook_mediums.jpg");
+                  position: absolute;
+                  z-index:-1;
+                  left: -22px;
+                  top: -220px;}  
+}
+@media(max-width: 735px){
+  .image-macbook{background-repeat: no-repeat;
+                 background-size: 353px 442px;
+                 height: 442px;
+                 width: 353px;
+                 background-image: url("../image/macbook_smalls.jpg");
+                 position: static;
+                 margin-top: 140px;
+                 margin-left: auto;
+                 margin-right: auto;}
+}
 .fp-product.fp-product-macbook-pro{position: relative;
                                    z-index: 100;
-                                   padding-bottom: 245px;}   
+                                   padding-bottom: 245px;}
+@media(max-width:1068px){
+  .fp-product.fp-product-macbook-pro{padding-top: 135px;
+                                     padding-bottom: 105px;}
+}   
+@media(max-width:735px){
+  .fp-product.fp-product-macbook-pro{padding-top: 57px;
+                                     padding-bottom: 0;}
+}
 .image-macbookpro{background-repeat: no-repeat;
                   background-size: 979px 523px;
                   height: 523px;
@@ -1282,6 +1360,28 @@ li {
                   position: absolute;
                   top: 130px;
                   left: 188px;}
+@media(max-width:1068px){
+  .image-macbookpro{background-repeat: no-repeat;
+                    background-size: 712px 380px;
+                    height: 380px;
+                    width: 712px;
+                    background-image: url("../image/mbpr_medium.jpg");
+                    position: absolute;
+                    top: -93px;
+                    left: 68px;}
+}
+@media(max-width:735px){
+  .image-macbookpro{background-repeat: no-repeat;
+                    background-size: 322px 172px;
+                    height: 172px;
+                    width: 322px;
+                    background-image: url("../image/mbpr_small.jpg");
+                    position: absolute;
+                    top: -93px;
+                    left: 68px;
+                    position: static;
+                    margin: 20px auto 0;}
+}
 .macbook-pro-content{position: relative;
                      text-align: center;
                      width: 980px;
@@ -1289,37 +1389,81 @@ li {
                      margin-right: auto;
                      z-index: 1;
                      height: 100%;} 
+@media(max-width:1068px){
+  .macbook-pro-content{width: 692px;}
+}
+@media(max-width:735px){
+  .macbook-pro-content{width:90%;}
+}
 .macbookpro-word-position{position:relative;
                           left:0px;
                           top:260px;}
-.fp-product.fp-product-macbook-air{position: relative;
-                                    z-index: 1;
-                                    padding-top: 263px;
-                                    padding-bottom: 280px;
-                                    background: -webkit-linear-gradient(#fff, #fafafa);
-                                    background: linear-gradient(#fff, #fafafa);} 
+.fp-product-macbook-air{position: relative;
+                        z-index: 1;
+                        padding-top: 263px;
+                        padding-bottom: 520px;
+                        background: -webkit-linear-gradient(#fff, #fafafa);
+                        background: linear-gradient(#fff, #fafafa);}
+@media(max-width:1068px){
+  .fp-product-macbook-air{padding-top: 183px;
+                          padding-bottom: 145px;}
+} 
+@media(max-width:735px){
+  .fp-product-macbook-air{padding-top: 70px;
+                          padding-bottom: 60px;}
+}
 .macbook-air-content{position: relative;
-                     text-align: center;
                      width: 980px;
                      margin-left: auto;
                      margin-right: auto;
                      z-index: 1;
                      height: 100%;
                      text-align:center;} 
+@media(max-width:1068px){
+  .macbook-air-content{width: 692px;}
+}
+@media(max-width:735px){
+  .macbook-air-content{width:90%;}
+}
 .image-macbookair{background-repeat: no-repeat;
                   background-size: 927px 474px;
                   height: 474px;
                   width: 927px;
                   background-image: url("../image/mba_large.png");
                   position: absolute;
-                  top: -120px;
-                  left: -522px;} 
+                  top: 115px;
+                  left: -183px;} 
+@media(max-width:1068px){
+  .image-macbookair{background-repeat: no-repeat;
+                    background-size: 643px 380px;
+                    height: 380px;
+                    width: 643px;
+                    background-image: url("../image/mba_medium.png");
+                    position: absolute;
+                    top: -135px;
+                    left: -120px;} 
+}
+@media(max-width:735px){
+  .image-macbookair{background-repeat: no-repeat;
+                    background-size: 303px 156px;
+                    height: 156px;
+                    width: 303px;
+                    background-image: url("../image/mba_small.png");
+                    position: static;
+                    margin: 12px auto 0;} 
+}
 .macbook-air-word-position{position:relative;
                            top:258px;
-                           left:8px;}  
-.fp-compare{margin-top: 310px;
+                           left:8px;} 
+@media(max-width:1068px){
+  .macbook-air-word-position{top:0;}
+} 
+.fp-compare{margin-top: 70px;
             margin-bottom: 0;
             text-align: center;}
+@media(max-width:1068px){
+  .fp-compare{margin-top:0;}
+}
 .compare-content{border-bottom: none;
                  width: 980px;
                  margin-left: auto;
@@ -1327,8 +1471,19 @@ li {
                  position: relative;
                  z-index: 1;
                  height: 100%;}
+@media(max-width:1068px){
+  .compare-content{width:692px;}
+}
 .compare-comtent-box{padding-top: 92px;
                      padding-bottom: 120px;}
+@media(max-width:1068px){
+  .compare-comtent-box{padding-top: 90px;
+                       padding-bottom: 70px;}
+}
+@media(max-width:735px){
+  .compare-comtent-box{padding-top: 75px;
+                       padding-bottom: 45px;}
+}
 .fp-compare-image{background-repeat: no-repeat;
                   background-size: 923px 435px;
                   height: 435px;
@@ -1336,8 +1491,32 @@ li {
                   margin-left: auto;
                   margin-right: auto;
                   background-image: url("../image/compare_large.jpg");
-                  margin-top: 40px;}  
+                  margin-top: 40px;} 
 .small-only{display:none;} 
+.desktop-only{display:block;} 
+@media(max-width:1068px){
+  .fp-compare-image{background-repeat: no-repeat;
+                    background-size: 611px 288px;
+                    height: 288px;
+                    width: 611px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-image: url("../image/compare_medium.jpg");
+                    margin-top: 62px;} 
+} 
+@media(max-width:735px){
+  .fp-compare-image{background-repeat: no-repeat;
+                    background-size: 315px 150px;
+                    height: 150px;
+                    width: 111.1111%;
+                    margin-left: -5.5556%;
+                    margin-right: -5.5556%;
+                    background-position: center top;
+                    background-image: url("../image/compare_small.jpg");
+                    margin-top: 0px;} 
+  .desktop-only{display:none;}
+  .small-only{display:block;}
+}
 .fp-secondary-headline {font-size: 52px;
                         line-height: 1.0865;
                         font-weight: 200;
@@ -1345,7 +1524,19 @@ li {
                         margin-top: 0;
                         margin-bottom: 5px;
                         text-align: center;} 
-.desktop-only{display:block;}   
+@media(max-width:1068px){
+  .fp-secondary-headline{font-size: 42px;
+                         line-height: 1.1429;
+                         font-weight: 200;
+                         letter-spacing: -0.01em;}
+}
+@media(max-width:735px){
+  .fp-secondary-headline{font-size: 32px;
+                         line-height: 1.125;
+                         font-weight: 200;
+                         letter-spacing: 0em;
+                         margin-top: 40px;}
+}
 .compare-comtent-box a {font-size: 20px;
                         line-height: 1.45;
                         font-weight: 598px;
@@ -1368,6 +1559,11 @@ li {
              background-position: center bottom;
              height: 572px;
              margin-bottom: 24px;}
+@media(max-width:1068px){
+  .section-ssn{height: 459px;
+               background-size: 1px 402px;
+               background-image: url("../image/shared/startsomethingnew_banner_gradient_medium.png");}
+}
 .ssn-content{position: relative;
              z-index: 1;
              padding-top: 67px;
@@ -1375,6 +1571,13 @@ li {
              margin-left: auto;
              margin-right: auto;
              height: 100%;} 
+@media(max-width:1068px){
+  .ssn-content{width:692px;}
+}
+@media(max-width:735px){
+  .ssn-content{width:90%;
+               height:394px;}
+}
 .fp-billboard-headline{margin-bottom: 0.25em;
                        font-size: 52px;
                        line-height: 1.0865;
@@ -1383,6 +1586,18 @@ li {
                        text-align: center;
                        margin-left: auto;
                        margin-right: auto;}
+@media(max-width:1068px){
+  .fp-billboard-headline{font-size: 42px;
+                          line-height: 1.1429;
+                          font-weight: 200;
+                          letter-spacing: -0.01em;}
+}
+@media(max-width:735px){
+  .fp-billboard-headline{font-size: 32px;
+                          line-height: 1.125;
+                          font-weight: 200;
+                          letter-spacing: 0em;}
+}
 .fp-billboard-copy{font-size: 18px;
                    line-height: 1.45;
                    font-weight: 400;
@@ -1390,6 +1605,18 @@ li {
                    margin-bottom: 0.2778em;
                    margin-left: auto;
                    margin-right: auto;}
+@media(max-width:1068px){
+  .fp-billboard-copy{font-size: 18px;
+                      line-height: 1.45;
+                      font-weight: 400;
+                      letter-spacing: normal;}
+}
+@media(max-width:735px){
+  .fp-billboard-copy{font-size: 18px;
+                      line-height: 1.45;
+                      font-weight: 400;
+                      letter-spacing: normal;}
+}
 .ssn-banner{position: absolute;
             bottom: 0;
             left: 50%;
@@ -1399,6 +1626,20 @@ li {
             height: 354px;
             width: 1571px;
             background-image: url("../image/startsomethingnew_banner_mac_large.png");} 
+@media(max-width:1068px){
+  .ssn-banner{background-size: 1068px 263px;
+              height: 263px;
+              width: 1068px;
+              background-image: url("../image/startsomethingnew_banner_mac_medium.png");
+              margin-left: -534px;}
+}
+@media(max-width:735px){
+  .ssn-banner{background-size: 736px 184px;
+              height: 184px;
+              width: 736px;
+              background-image: url("../image/startsomethingnew_banner_mac_small.png");
+              margin-left: -368px;}
+}
 .fp-shopstrip{padding-top: 60px;} 
 .fp-shopstrip{width: 980px;
               margin-left: auto;
